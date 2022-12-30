@@ -1,0 +1,41 @@
+.left-panel {
+  width: 8%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  /* flex: 1;  */
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: wheat;
+}
+.left-panel > div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.left-panel > div:hover {
+  color: aqua;
+}
+
+.left-panel > .link {
+  width: 80%;
+  justify-content: space-evenly;
+  /* background-color: azure; */
+}
+
+.link > a {
+  display: flex;
+  background-color: grey;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.link > a:hover {
+  background-color: aqua;
+}
+
+@media (max-width: 1200px) {
+  .left-panel {
+    display: none;
+  }
+}
