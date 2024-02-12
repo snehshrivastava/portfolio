@@ -1,6 +1,4 @@
-import "./RightPanel.css";
-import { Modal, Popover } from "@mui/material";
-import Typography from "@mui/material/Typography";
+
 import { useState } from "react";
 import Popup from "reactjs-popup";
 import Box from "@mui/material/Box";
@@ -13,7 +11,6 @@ import "animate.css";
 import Home from "../Home/Home";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutMe from "../AboutMe/AboutMe";
 
 const style = {
   position: "absolute",
@@ -26,7 +23,7 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-function RightPanel() {
+function AboutMe() {
   const sentence = "Hi, I'm Sneh, Software Developer/Engineer";
   const perLine = sentence.split("");
   const [navToggle, setnavToggle] = useState(false);
@@ -34,14 +31,8 @@ function RightPanel() {
     setnavToggle(!navToggle);
   };
   return (
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<Home/>}></Route>
-        <Route path='about' element={<AboutMe/>}></Route>
-      </Routes>
-    </Router>
-
+    <>About me</>
   );
 }
 
-export default RightPanel;
+export default AboutMe;
