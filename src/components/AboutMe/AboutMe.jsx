@@ -9,6 +9,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { Theme } from "@mui/material/styles";
 import "animate.css";
 import Home from "../Home/Home";
+import "./AboutMe.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -31,7 +32,14 @@ function AboutMe() {
     setnavToggle(!navToggle);
   };
   return (
-    <>About me</>
+    <div>
+      <div className="about-text">
+        <span>
+          Hi guys I am Computer Science B.Tech. graduate from IIT(ISM) Dhanbad. <br/>I have experience around NodeJs with express and fastify framework,
+          Java with springboot framework and databases(Mongo and MySql).<br/>Also knowledge around architecture with cloud experience on GCP and AWS.
+        </span>
+      </div>
+    </div>
   );
 }
 

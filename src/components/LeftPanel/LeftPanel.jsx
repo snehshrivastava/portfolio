@@ -1,17 +1,18 @@
+import { NavLink } from "react-router-dom";
 import "./LeftPanel.css";
 function LeftPanel() {
+  // const navigate = useNavigate();
   return (
     <>
       <div className="left-panel">
-        <div>Home Button</div>
-        <div>About</div>
-        <div>My Skill</div>
-        <div>Work</div>
-        <div>Contact</div>
-        <div>Blog</div>
+        <NavLink className={'navlink'} to='/'>Home Button</NavLink >
+        <NavLink className={'navlink'} to='/about'>About</NavLink >
+        <NavLink className={'navlink'} to='/skills'>My Skill</NavLink >
+        <NavLink className={'navlink'} to='/work'>Work</NavLink >
+        <NavLink className={'navlink'} to='/blog'>Blog</NavLink >
         <div className="link">
           <a
-            href="https://pl.linkedin.com/pub/jacek-jeznach/40/9b6/a9"
+            href="https://www.linkedin.com/in/sneh-shrivastava-818b3310a/"
             target="_blank"
           >
             <svg
@@ -23,7 +24,7 @@ function LeftPanel() {
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
             </svg>
           </a>
-          <a href="https://google.com" target="_blank">
+          <a href="https://github.com/snehshrivastava" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

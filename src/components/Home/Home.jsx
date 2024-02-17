@@ -29,7 +29,7 @@ function Home() {
     setnavToggle(!navToggle);
   };
   return (
-    <div className="right-panel">
+    <div>
       <a class="left-toggle" onClick={showNav}>
         <svg
           aria-hidden="true"

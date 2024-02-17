@@ -13,7 +13,17 @@
   width: 100%;
   justify-content: center;
 }
-.left-panel > div:hover {
+
+/* .left-panel > div:hover {
+  color: aqua;
+} */
+.left-panel > .navlink {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.left-panel > .navlink:hover {
   color: aqua;
 }
 

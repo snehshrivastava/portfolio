@@ -14,6 +14,9 @@ import Home from "../Home/Home";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutMe from "../AboutMe/AboutMe";
+import Blog from "../Blog/Blog";
+import Skills from "../Skills/Skills";
+import Work from "../Work/Work";
 
 const style = {
   position: "absolute",
@@ -34,12 +37,15 @@ function RightPanel() {
     setnavToggle(!navToggle);
   };
   return (
-    <Router>
+    <div className="right-panel">
       <Routes>
         <Route exact path='/' element={<Home/>}></Route>
         <Route path='about' element={<AboutMe/>}></Route>
+        <Route path='blog' element={<Blog/>}></Route>
+        <Route path='skills' element={<Skills/>}></Route>
+        <Route path='work' element={<Work/>}></Route>
       </Routes>
-    </Router>
+    </div>
 
   );
 }
