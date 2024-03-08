@@ -38,8 +38,8 @@ COPY .env /usr/src/app/
 COPY package.json /usr/src/app/
 RUN npm i
 
-COPY /public /usr/src/app/public
-COPY /src /usr/src/app/src
+COPY . /usr/src/app/
+# COPY /src /usr/src/app/src
 # Run the build script.
 RUN npm run build
 
