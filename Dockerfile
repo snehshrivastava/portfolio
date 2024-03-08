@@ -41,7 +41,7 @@ RUN npm i
 COPY . /usr/src/app/
 # COPY /src /usr/src/app/src
 # Run the build script.
-RUN npm run build
+# RUN npm run build
 
 ################################################################################
 # Create a new stage to run the application with minimal runtime dependencies
@@ -49,7 +49,7 @@ RUN npm run build
 # FROM base as final
 
 # Use production node environment by default.
-ENV NODE_ENV production
+# ENV NODE_ENV production
 
 # Run the application as a non-root user.
 # USER node
@@ -73,4 +73,4 @@ ENV NODE_ENV production
 EXPOSE 3001
 
 # Run the application.
-CMD npm run start
+CMD npm start
