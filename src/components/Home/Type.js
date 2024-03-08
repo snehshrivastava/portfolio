@@ -10,6 +10,7 @@ function Type() {
           "Freelancer",
           "Full Stack Developer",
           "Open Source Contributor",
+          "DevOps Engineer"
         ],
         autoStart: true,
         loop: true,

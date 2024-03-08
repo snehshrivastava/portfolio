@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 function ProjectCards(props) {
   const navigate = useNavigate();
   return (
-    <Card className="project-card-view" onClick={() => navigate(`/blogDes?id=${props.id}`)}>
+    <Card className="project-card-view" onClick={() => navigate(`/blogDes?id=${props.id}`, { state: { title: props.title, description: props.description } })}>
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>

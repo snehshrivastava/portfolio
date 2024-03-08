@@ -9,51 +9,49 @@ import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 
-function Blogs() {
-    const [blogs, setBlogs] = useState([]);
-    const fetchData = async () => {
-
-        const data = await axios.get('http://localhost:3000/api/v1/blogs');
-        console.log(data)
-        setBlogs(data.data.data);
-    }
-    useEffect(() => {
-        fetchData();
-    }, [])
+function BlogDes(props) {
+    // const [blogs, setBlogs] = useState([]);
+    const location = useLocation();
+    // useEffect(async () => {
+    //     const data = await axios.get('http://localhost:3000/api/v1/blogs');
+    //     console.log(data)
+    //     setBlogs(data.data.data);
+    // }, [])
 
     return (
         <Container fluid className="project-section">
             <Particle />
             <Container>
                 <h1 className="project-heading">
-                    <strong className="purple">Blogs </strong>
+                    <strong className="purple">{location.state.title} </strong>
                 </h1>
                 <p style={{ color: "white" }}>
-                    Here are a few things I generally forget.
+                    {location.state.description}
                 </p>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-                    {blogs &&
+                    {/* {blogs &&
                         blogs.map(b => {
                             return <Col md={4} className="project-card">
                                 <ProjectCard
                                     imgPath={chatify}
                                     isBlog={false}
                                     id={b._id}
-                                    title={b.topic}
+                                    title={b.title}
                                     description={b.article}
-                                    ghLink=""
-                                    demoLink=""
+                                    ghLink="https://github.com/soumyajit4419/Chatify"
+                                    demoLink="https://chatify-49.web.app/"
                                 />
                             </Col>
                         })
 
-                    }
+                    } */}
                 </Row>
             </Container>
         </Container >
     );
 }
 
-export default Blogs;
+export default BlogDes;
