@@ -31,7 +31,8 @@
     "start": "react-scripts --max_old_space_size=7168 start",
     "build": "react-scripts --max_old_space_size=7168 build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "resume": "node scripts/build-resume.mjs"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "playwright-core": "^1.47.2"
   }
 }
