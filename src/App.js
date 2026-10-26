@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
@@ -15,8 +13,6 @@ import {
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
-import Blogs from "./components/Blogs/Blogs";
-import BlogDes from "./components/Blogs/BlogDes";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -38,11 +34,8 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/project" element={<Projects />} /> */}
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blogDes" element={<BlogDes />} />
-
-          {/* <Route path="/about" element={<About />} /> */}
+          {/* Blogs (src/components/Blogs) are disabled until the blog API is deployed;
+              they currently call a localhost backend. */}
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

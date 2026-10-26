@@ -602,6 +602,28 @@ button:focus {
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
 
+.tech-icons > svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.tech-icon-label {
+  display: block;
+  font-size: 0.2em;
+  margin-top: 6px;
+}
+
+.tech-icon-text {
+  /* matches the height of an icon tile: 1em icon + label */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5em;
+  font-size: 0.25em;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -711,6 +733,143 @@ button:focus {
   top: 0;
   background: #fff;
   border: 2px solid #8a49a8;
+}
+
+.resume-page {
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* --------- */
+/* Experience */
+/* --------- */
+
+.highlight {
+  color: #d9a6f5;
+  font-weight: 600;
+}
+
+.home-tagline {
+  font-size: 1.25em;
+  color: #d8cfe0;
+  padding-left: 50px;
+  padding-top: 10px;
+  max-width: 34em;
+}
+
+.experience-section,
+.projects-home-section {
+  position: relative !important;
+  padding-top: 60px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+  text-align: left;
+}
+
+.experience-section .project-heading,
+.projects-home-section .project-heading {
+  text-align: center;
+}
+
+.experience-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 12px;
+}
+
+.experience-timeline .resume-item {
+  padding-bottom: 28px;
+}
+
+.experience-timeline .resume-item ul {
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.experience-timeline .resume-item ul li {
+  list-style: disc;
+  margin-left: 18px;
+  padding-bottom: 6px;
+  line-height: 1.6;
+  color: #e6e1ea;
+}
+
+.experience-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 16px;
+  margin-bottom: 10px;
+}
+
+.experience-role {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.experience-company {
+  color: var(--imp-text-color);
+}
+
+.experience-period {
+  color: #a588c0;
+  font-size: 0.95em;
+  margin: 0;
+}
+
+.experience-education {
+  max-width: 900px;
+  margin: 10px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.experience-education-icon {
+  font-size: 2.2em;
+  color: var(--imp-text-color);
+  flex-shrink: 0;
+}
+
+.project-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 8px 0 14px;
+}
+
+.project-stack li {
+  list-style: none;
+  font-size: 0.85em;
+  padding: 2px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(200, 137, 230, 0.637);
+  color: #e0c3f2;
+}
+
+.home-email {
+  color: #d9a6f5;
+}
+
+@media (max-width: 767px) {
+  .home-tagline {
+    font-size: 1.05em;
+  }
+
+  .experience-timeline {
+    padding-left: 10px;
+    padding-right: 4px;
+  }
 }
 
 .like-item {

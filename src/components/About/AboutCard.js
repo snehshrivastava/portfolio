@@ -9,11 +9,21 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Sneh Shrivastava </span>
-            from <span className="purple"> India.</span>
+            from <span className="purple">Bengaluru, India.</span>
             <br />
-            I am currently employed as a software developer at BIZ2X.
             <br />
-            I have completed B.Tech. in Computer Science and Engineering at IIT(ISM)
+            I'm a Senior Engineer at <span className="purple">Khelomore</span>,
+            where I own the operations backend: microservices, real-time chat on
+            WebSockets and Redis, and the framework that onboards partner sports
+            venues.
+            <br />
+            <br />
+            Before that I built limit management and KYC automation for
+            Emirates NBD, reward and in-app currency systems at Chingari, and
+            multi-tenant reporting at Biz2Credit.
+            <br />
+            <br />
+            I hold a B.Tech in Computer Science and Engineering from IIT (ISM)
             Dhanbad.
             <br />
             <br />
@@ -32,9 +42,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Do, or Do not. There is not try!"{" "}
+            "Do. Or do not. There is no try."{" "}
           </p>
-          <footer className="blockquote-footer">Dumbledore</footer>
+          <footer className="blockquote-footer">Yoda</footer>
         </blockquote>
       </Card.Body>
     </Card>

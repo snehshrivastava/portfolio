@@ -1,18 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-  AiFillMail
-} from "react-icons/ai";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { profile } from "../../data/resume";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section" id="contact">
       <Container>
         <Row>
           <Col md={12} className="home-about-social">
@@ -23,9 +17,10 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/snehshrivastava"
+                  href={profile.github}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="GitHub"
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
@@ -33,9 +28,10 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/sneh-shrivastava-818b3310a"
+                  href={profile.linkedin}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="LinkedIn"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
@@ -43,15 +39,19 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:subham4shrivastava@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
+                  href={`mailto:${profile.email}`}
+                  aria-label="Email"
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillMail />
                 </a>
               </li>
             </ul>
+            <p>
+              <a className="home-email" href={`mailto:${profile.email}`}>
+                {profile.email}
+              </a>
+            </p>
           </Col>
         </Row>
       </Container>

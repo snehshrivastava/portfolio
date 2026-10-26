@@ -5,6 +5,9 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import About from "../About/About";
+import Experience from "../Experience/Experience";
+import Projects from "../Projects/Projects";
+import { profile } from "../../data/resume";
 
 function Home() {
   return (
@@ -26,6 +29,11 @@ function Home() {
                 <strong className="main-name"> SNEH SHRIVASTAVA</strong>
               </h1>
 
+              <p className="home-tagline">
+                Backend engineer in {profile.location}, building real-time,
+                event-driven systems with Node.js, Java and Kafka.
+              </p>
+
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
@@ -34,7 +42,7 @@ function Home() {
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
-                alt="home pic"
+                alt=""
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
@@ -43,8 +51,9 @@ function Home() {
         </Container>
       </Container>
       <About />
+      <Experience />
+      <Projects />
       <Home2 />
-
     </section>
   );
 }
